@@ -77,12 +77,14 @@
     &-title {
         margin-bottom: 10px;
         font-size: 48px;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
         line-height: 72px;
     }
     &-text {
         margin-bottom: 50px;
         font-size: 20px;
+        font-family: 'Roboto', sans-serif;
         font-weight: 500;
         line-height: 30px;
     }
@@ -98,11 +100,13 @@
             height: 56px;
             border: none;
             font-size: 14px;
+            font-family: 'Roboto', sans-serif;
             font-weight: 500;
             padding-left: 25px;
             padding-right: 60px;
             &::placeholder {
                 color: #90a4ae;
+                font-family: 'Roboto', sans-serif;
                 font-weight: 500;
              }
          }
@@ -163,6 +167,7 @@
         padding: 10px 30px;
         min-height: 90px;
         align-items: center;
+        font-family: 'Roboto', sans-serif;
         font-weight: 500;
         border-bottom: 1px solid #e7ecf2;
     }
@@ -182,6 +187,7 @@
     &-price {
         font-size: 20px;
         color: $bg;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
     }   
     &-info {
@@ -207,6 +213,7 @@
        }
        span {
          font-size: 14px;
+         font-family: 'Roboto', sans-serif;
          font-weight: 500;  
        }
        
@@ -270,3 +277,75 @@
 }
 
 //end product-slider
+//start advanteges
+
+.advantages {
+    background-color: $bg;
+    padding: 110px 0;    
+}
+.advantages-title {
+    color: #fff;
+}
+.advantages__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.advantages__item {
+    max-width: 370px;
+    text-align: center;
+    padding: 0px 15px;
+    &:hover {
+        .advantages__item-images {
+            background-color: $green;
+            transition: all .8s;
+        }
+        .advantages__item-images {
+            svg {
+                color: #fff;
+            }
+        }
+        .advantages__item-title {
+            color: $green;
+            transition: all .8s;
+        }
+    }
+    &-images{
+        width: 114px;
+        height: 114px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px;
+    }
+    &-title {
+        font-size: 24px;
+        margin-bottom: 25px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+    &-text {
+        font-size: 15px;
+    }
+}
+.icosvg-1 {
+    svg {
+     width: 80px;
+     height: 80px;   
+    }
+}
+.icosvg-2 {
+    svg {
+    width: 80px;
+    height: 80px;
+    }
+}
+.icosvg-3 {
+    svg {
+    width: 80px;
+    height: 80px;    
+    }
+}
+//end advanteges
