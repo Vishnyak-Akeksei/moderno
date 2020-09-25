@@ -35,7 +35,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  
+  .icon-th:before {
+    content: "\f00a";
+  }  
   .icon-gift:before {
     content: "\e900";
   }
