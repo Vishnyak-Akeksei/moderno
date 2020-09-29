@@ -2000,4 +2000,194 @@
     }
 }
 //end settings
+//start profile
+.profile__inner {
+    display: flex;
+}
+.profile__asside {
+    margin-right: 30px;
+    max-width: 270px;
+    width: 100%;
+    margin-bottom: 30px;
+    &.footer__social-link {
+        margin-bottom: 30px;
+    }
+}
+.profile__content {
+    width: 100%;
+}
+.profile-status {
+    font-size: 13px;
+    border: 1px solid #d6d6d6;
+    color: #707070;
+    padding: 6px 9px 5px 30px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        left: 11px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        top: 13px;
+    }
+}
+.profile-on {
+    &::before {
+        background-color: $green;
+    }
+}
+.profile-off {
+    &::before {
+        background-color: $red;
+    }
+}
+.profile__asside-btn {
+    margin-bottom: 13px;
+    text-align: center;
+}
+.profile__asside-message {
+    margin-bottom: 17px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    padding: 18px 10px;
+    position: relative;
+    background-color: #546e7a;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    &::before {
+        content: "\f003";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 50px;
+        top:17px;
+    }
+}
+.profile__asside-following {
+    margin-bottom: 17px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: $green;
+    padding: 18px 10px;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+}
+.profile__banner {
+    padding: 20px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+.profile__banner-images {
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 332px;
+    background-position: center;
+}
+.profile__items {
+    display: flex;
+    border: 1px solid #dedede;
+}
+.profile__item {
+    width: 25%;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 5px 17px;
+    & + .profile__item {
+        border-left: 1px solid #dedede;
+    }
+    &-title {
+        font-size: 14px;
+        color: $bg;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+    &-content {
+        font-size: 14px;
+        color: #707070;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        &.profile__item-sales {
+            color: $bg;  
+        }
+    }
+}
+.profile-settings {
+    .product-one__tabs.settings__tabs .tabs span {
+         font-family: 'Roboto', sans-serif !important;
+         font-weight: 500;
+         color: #707070;
+         position: relative;
+         &.active::before {
+             color: $green;
+         }
+         &::before {
+            position: absolute;
+            font-family: 'icomoon'; 
+            left: 27px;
+            top: 15px;
+            font-size: 14px;
+            color: #d0d0d0;
+         }
+        
+    }
+} 
+.personal-box {
+    background-color: #fff;
+    padding: 35px 40px 45px;
+    border: 1px solid #dedede;
+
+}
+.personal-box__title {
+   margin-bottom: 25px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 700; 
+   color: $bg;
+   font-size: 20px;
+}
+.personal-box__text {
+    margin-bottom: 20px;
+    p{
+        color: #707070;
+    }
+}
+.personal-box__item-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.personal-box__item-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: $bg;
+    font-style: italic;
+}
+.personal-box__item-number {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: $bg;
+}
+.personal-box__item-line {
+   height: 15px;
+   background-color: #f4f4f4;
+   border-radius: 3px; 
+   margin-bottom: 23px;
+   span {
+       display: block;
+       border-radius: 3px;
+       height: 15px;
+       background-image: url(../images/pro-bar.jpg);
+       background-repeat: repeat;
+   }
+}
+//end profile
 @import "media";
