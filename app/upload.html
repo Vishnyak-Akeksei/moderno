@@ -155,9 +155,9 @@
                     </ul>
                   </div>
                 </div>
-                  <a class="header__btn header__btn-login header__btn-login--off" href="">Login</a>
-                  <a class="header__btn header__btn-logout header__btn-login--on" href="">Logout</a>
-                  <a class="header__btn header__btn-register header__btn-login--off" href="">Register</a>
+                <a class="header__btn header__btn-login header__btn-login--off" href="">Login</a>
+                <a class="header__btn header__btn-logout header__btn-login--on" href="">Logout</a>
+                <a class="header__btn header__btn-register header__btn-login--off" href="">Register</a>
               </div>
               <div class="header__btn-menu icon-user"></div>
             </div>
@@ -226,272 +226,98 @@
           </div>
       </header>
 
+      <section class="search page-search" style="background-image: url(images/search-bg.jpg);">
+        <div class="container">
+          <div class="search__inner">
+            <div class="search__inner-text">
+              Premium WordPress Themes, Web Templates and Many More ...
+            </div>
+            <div class="search__inner-form">
+              <form>
+                <input type="text" placeholder="Search Your Keywords . . ." required>
+                <button type="submit">
+                  <img src="images/icons/search.png" alt="">
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
       <div class="breadcrumbs">
         <div class="container">
           <div class="breadcrumbs__inner">
             <ul class="breadcrumbs__list">
               <li><a href="#">Home</a></li>
-              <li><span>Settings</span></li>
+              <li><span>Upload Product</span></li>
             </ul>
           </div>
         </div>
       </div>
 
-      <section class="settings">
+      <section class="upload">
         <div class="container">
-          <div class="product-one__tabs settings__tabs">
-            <div class="tabs">
-              <span class="tab active angle-right" data-id="1">Personal Information</span>
-              <span class="tab angle-right" data-id="2">Profile</span>
-              <span class="tab angle-right" data-id="3">Badges</span>
-              <span class="tab angle-right" data-id="4">E-mail Settings</span>
-              <span class="tab angle-right" data-id="5">Social Network</span>
-            </div>
-            <div class="tab_content">
-              <div class="tab-item active-tab" id="1">
-                <div class="page-box">
-                  <div class="page-box__title">Personal Information</div>
-                  <div class="page-box__content">
-                    <form>
-                      <div class="settings__line">
-                        <label>First Name</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Last Name</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Company Name</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label class="select-country">Country</label>
-                        <select>
-                          <option>Select Your Country</option>
-                          <option>Select Your Country</option>
-                        </select>
-                      </div>
-                      <div class="settings__line">
-                        <label>Address Line 1</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Address Line 2</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>City</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>State / Province / Region</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Zip / Postal Code</label>
-                        <input type="text">
-                      </div>
-                    </form>
-                  </div>
+          <form>
+            <div class="upload__inner">
+              <div class="upload__inner-title">Upload Your item</div>
+              <div class="upload__inner-content">
+                <div class="upload__line">
+                  <label>Select Categories <span>*</span></label>
+                  <select>
+                    <option>Select</option>
+                    <option>Select</option>
+                  </select>
+                </div>
+                <div class="upload__line">
+                  <label>Product Name <span>*</span></label>
+                  <input type="text"placeholder='Enter your product name here ...' required>
+                </div>
+                <div class="upload__line">
+                  <label>Product Description<span>*</span></label>
+                  <textarea placeholder="h1> Type your text  here /h1/>" required></textarea>
+                </div>
+                <div class="upload__line">
+                  <label>Upload Main File <span>*</span></label>
+                  <input type="file" required data-placeholder="No File Choosen" data-browse="Choose File">
+                </div>
+                <div class="upload__line">
+                  <label>Upload Screenshots <span>*</span></label>
+                  <input type="file" required data-placeholder="No File Choosen" data-browse="Choose File">
+                </div>
+                <div class="upload__line">
+                  <label>File Included <span>*</span></label>
+                  <select>
+                    <option value="">Select File Type</option>
+                    <option value="">Select File Type</option>
+                    <option value="">Select File Type</option>
+                    <option value="">Select File Type</option>
+                  </select>
+                </div>
+                <div class="upload__line">
+                  <label>File Dimensions<span>*</span></label>
+                  <input type="text" placeholder="Enter the item  dimentionss here ..." required>
+                </div>
+                <div class="upload__line">
+                  <label>Item Tags <span>*</span></label>
+                  <input type="text" placeholder="Enter Tag Here" required>
                 </div>
               </div>
-              <div class="tab-item" id="2">
-                <div class="page-box">
-                  <div class="page-box__title">Personal Information</div>
-                  <div class="page-box__content">
-                    <form>
-                      <div class="settings__line">
-                        <label>First Name</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Last Name</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Company Name</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Country</label>
-                        <select>
-                          <option>Select Your Country</option>
-                          <option>Select Your Country</option>
-                        </select>
-                      </div>
-                      <div class="settings__line">
-                        <label>Address Line 1</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Address Line 2</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>City</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>State / Province / Region</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Zip / Postal Code</label>
-                        <input type="text">
-                      </div>
-                    </form>
-                  </div>
+              <div class="upload__inner-title">Set Your Price (US$)</div>
+              <div class="upload__inner-content">
+                <div class="upload__line">
+                  <label>Regular License <span>*</span></label>
+                  <input type="text" placeholder="$00.00" required>
                 </div>
-              </div>
-              <div class="tab-item" id="3">
-                <div class="page-box">
-                  <div class="page-box__title">Personal Information</div>
-                  <div class="page-box__content">
-                    <form>
-                      <div class="settings__line">
-                        <label>First Name</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Last Name</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Company Name</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Country</label>
-                        <select>
-                          <option>Select Your Country</option>
-                          <option>Select Your Country</option>
-                        </select>
-                      </div>
-                      <div class="settings__line">
-                        <label>Address Line 1</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Address Line 2</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>City</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>State / Province / Region</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Zip / Postal Code</label>
-                        <input type="text">
-                      </div>
-                    </form>
-                  </div>
+                <div class="upload__line">
+                  <label>Extended License <span>*</span></label>
+                  <input type="text" placeholder="$00.00" required>
                 </div>
-              </div>
-              <div class="tab-item" id="4">
-                <div class="page-box">
-                  <div class="page-box__title">Personal Information</div>
-                  <div class="page-box__content">
-                    <form>
-                      <div class="settings__line">
-                        <label>First Name</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Last Name</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Company Name</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Country</label>
-                        <select>
-                          <option>Select Your Country</option>
-                          <option>Select Your Country</option>
-                        </select>
-                      </div>
-                      <div class="settings__line">
-                        <label>Address Line 1</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Address Line 2</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>City</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>State / Province / Region</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Zip / Postal Code</label>
-                        <input type="text">
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-item" id="5">
-                <div class="page-box">
-                  <div class="page-box__title">Personal Information</div>
-                  <div class="page-box__content">
-                    <form>
-                      <div class="settings__line">
-                        <label>First Name</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Last Name</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Company Name</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Country</label>
-                        <select>
-                          <option>Select Your Country</option>
-                          <option>Select Your Country</option>
-                        </select>
-                      </div>
-                      <div class="settings__line">
-                        <label>Address Line 1</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Address Line 2</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>City</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>State / Province / Region</label>
-                        <input type="text">
-                      </div>
-                      <div class="settings__line">
-                        <label>Zip / Postal Code</label>
-                        <input type="text">
-                      </div>
-                    </form>
-                  </div>
-                </div>
+                <button type="submit">Submit</button>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </section>
+
 
     </div>
     <footer class="footer">

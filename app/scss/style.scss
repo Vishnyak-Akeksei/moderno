@@ -390,7 +390,7 @@
     font-size: 48px;
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
 }
 .login__wrapper {
@@ -404,7 +404,7 @@
         width: 100%;
         &::before {
             position: absolute;
-            font-family: 'icomoon';
+            font-family: "icomoon";
             font-size: 14px;
             color: #fff;
             left: 18px;
@@ -434,15 +434,15 @@
         }
     }
     button {
-       margin-top: 19px;
-       padding: 18px 0 16px; 
-       background-color: #fff;
-       text-transform: uppercase;
-       width: 140px;
-       border: none;
-       margin-right: 10px;
-       font-family: 'Roboto', sans-serif;
-       font-weight: 700;
+        margin-top: 19px;
+        padding: 18px 0 16px;
+        background-color: #fff;
+        text-transform: uppercase;
+        width: 140px;
+        border: none;
+        margin-right: 10px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
         color: #000;
         text-align: center;
         box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
@@ -456,7 +456,7 @@
 }
 .creat-acc {
     margin-top: 19px;
-    padding: 15px 0 14px 28px; 
+    padding: 15px 0 14px 28px;
     text-align: center;
     width: 246px;
     background-color: #76ae36;
@@ -465,7 +465,7 @@
     font-size: 18px;
     &::before {
         content: "\f044";
-        font-family: 'icomoon';
+        font-family: "icomoon";
         position: absolute;
         top: 15px;
         left: 35px;
@@ -474,7 +474,6 @@
 .fancybox-button svg path {
     color: #fff;
 }
-
 
 //end modal
 //start search
@@ -549,6 +548,11 @@
     padding: 110px 0;
     background-color: $grey;
 }
+.products__wrapper,
+.products-slider__wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
 .products__inner-btn {
     text-align: center;
     margin-bottom: 60px;
@@ -570,12 +574,19 @@
 }
 .products__inner-box {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-left: -30px;
+}
+.products .product__item {
+    flex-basis: calc(25% - 30px);
+    margin-left: 30px;  
 }
 .product__item {
     max-width: 442px;
     width: 100%;
+    flex-basis: calc(25% - 30px);
+    margin-left: 30px;
     box-shadow: 0 1px 2px 0 rgba(205, 214, 222, 0.75);
     margin-bottom: 30px;
     &-img {
@@ -1238,9 +1249,10 @@
 }
 .product-page__content {
     .product__item {
-        max-width: 270px;
+        flex-basis: calc(33.3333% - 30px);
         background-color: #fff;
         transition: all 0.5s;
+        margin-left: 30px;
         &-img {
             min-height: 180px;
         }
@@ -1271,9 +1283,10 @@
 }
 .product-page__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    margin-left: -30px;
 }
 .pagination__list {
     li {
@@ -1341,6 +1354,7 @@
 .product__item.new {
     &.list {
         max-width: 100%;
+        flex-basis: 100%;
         .product__item-img {
             width: 240px;
             float: left;
@@ -1416,7 +1430,7 @@
             border: 1px solid #dcdcdc;
             justify-content: center;
             align-items: center;
-            padding: 16px 0;
+            padding: 16px;
             display: flex;
         }
     }
@@ -1722,12 +1736,12 @@
     margin-bottom: 150px;
 }
 .page-404__head,
-.about__head, 
+.about__head,
 .contact__head {
     font-size: 24px;
     color: #444;
     padding: 23px 27px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     border-bottom: 1px solid #cdd4c4;
 }
@@ -1737,7 +1751,7 @@
     color: #fff;
 }
 .page-404__404 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 800;
     font-size: 300px;
     line-height: 300px;
@@ -1756,10 +1770,10 @@
 }
 .page-404__title {
     margin-bottom: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 30px;
-    
+
 }
 .page-404__text {
     font-size: 18px;
@@ -1785,13 +1799,13 @@
 .about__box {
     h3 {
         font-size: 24px;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 700;
         color: #444;
         margin-top: 40px;
         margin-bottom: 15px;
     }
-    p{
+    p {
         margin-bottom: 40px;
         color: #707070;
     }
@@ -1827,13 +1841,13 @@
         padding-bottom: 20px;
         position: relative;
         font-size: 20px;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 500;
         color: $bg;
-        padding-left: 40px;  
+        padding-left: 40px;
         margin-bottom: 20px;
         &::after {
-            content: '';
+            content: "";
             position: absolute;
             width: 44px;
             height: 4px;
@@ -1857,7 +1871,7 @@
 .contact__form-title {
     margin-bottom: 20px;
     font-size: 24px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     color: #333;
 }
@@ -1902,20 +1916,26 @@
         font-size: 16px;
         text-align: center;
         color: #fff;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 700;
         padding: 20px 5px;
         width: 190px;
     }
-    
+
 }
 
 //end contact
 
 //start settings
-.settings {
-    padding-bottom: 100px;
+.settings__line.jq-selectbox {
+    max-width: 540px;
+    width: 100%;
+    z-index: 0;
 }
+.jq-selectbox__select {
+    max-width: 540px;
+}
+
 .product-one__tabs.settings__tabs {
     display: flex;
     .tabs {
@@ -1934,22 +1954,22 @@
             padding: 17px 17px 17px 50px;
             color: #707070;
             font-size: 14px;
-            font-family: 'Roboto', sans-serif;
+            font-family: "Roboto", sans-serif;
             font-weight: 500;
             &.active {
-                border-bottom: 2px solid $green; 
+                border-bottom: 2px solid $green;
                 color: #37474f;
                 &::before {
                     color: $green;
-                } 
+                }
             }
             &:before {
-               left: 24px; 
-               color: #444;
+                left: 24px;
+                color: #444;
             }
         }
     }
-    
+
     .tab_content {
         padding: 0;
         border: none;
@@ -1958,7 +1978,7 @@
         background-color: transparent;
     }
 }
-.tabs .tab+.tab {
+.tabs .tab + .tab {
     border-left: none;
 }
 .page-box {
@@ -1969,7 +1989,7 @@
         border-bottom: 1px solid #dedede;
         padding: 18px 34px;
         font-size: 24px;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 500;
         color: $bg;
     }
@@ -2051,7 +2071,7 @@
     display: block;
     width: 100%;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     color: #fff;
     padding: 18px 10px;
@@ -2060,10 +2080,10 @@
     box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
     &::before {
         content: "\f003";
-        font-family: 'icomoon';
+        font-family: "icomoon";
         position: absolute;
         left: 50px;
-        top:17px;
+        top: 17px;
     }
 }
 .profile__asside-following {
@@ -2071,7 +2091,7 @@
     display: block;
     width: 100%;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     color: #fff;
     background-color: $green;
@@ -2106,39 +2126,40 @@
     &-title {
         font-size: 14px;
         color: $bg;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 500;
     }
     &-content {
         font-size: 14px;
         color: #707070;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 500;
         &.profile__item-sales {
-            color: $bg;  
+            color: $bg;
         }
     }
 }
 .profile-settings {
     .product-one__tabs.settings__tabs .tabs span {
-         font-family: 'Roboto', sans-serif !important;
-         font-weight: 500;
-         color: #707070;
-         position: relative;
-         &.active::before {
-             color: $green;
-         }
-         &::before {
+        font-family: "Roboto", sans-serif !important;
+        font-weight: 500;
+        color: #707070;
+        position: relative;
+        &.active::before {
+            color: $green;
+        }
+        &::before {
             position: absolute;
-            font-family: 'icomoon'; 
+            font-family: "icomoon";
             left: 27px;
             top: 15px;
             font-size: 14px;
             color: #d0d0d0;
-         }
-        
+        }
     }
-} 
+
+}
+
 .personal-box {
     background-color: #fff;
     padding: 35px 40px 45px;
@@ -2146,15 +2167,15 @@
 
 }
 .personal-box__title {
-   margin-bottom: 25px;
-   font-family: 'Roboto', sans-serif;
-   font-weight: 700; 
-   color: $bg;
-   font-size: 20px;
+    margin-bottom: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: $bg;
+    font-size: 20px;
 }
 .personal-box__text {
     margin-bottom: 20px;
-    p{
+    p {
         color: #707070;
     }
 }
@@ -2164,30 +2185,267 @@
     margin-bottom: 16px;
 }
 .personal-box__item-name {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: $bg;
     font-style: italic;
 }
 .personal-box__item-number {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: $bg;
 }
 .personal-box__item-line {
-   height: 15px;
-   background-color: #f4f4f4;
-   border-radius: 3px; 
-   margin-bottom: 23px;
-   span {
-       display: block;
-       border-radius: 3px;
-       height: 15px;
-       background-image: url(../images/pro-bar.jpg);
-       background-repeat: repeat;
-   }
+    height: 15px;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    margin-bottom: 23px;
+    span {
+        display: block;
+        border-radius: 3px;
+        height: 15px;
+        background-image: url(../images/pro-bar.jpg);
+        background-repeat: repeat;
+    }
 }
 //end profile
+//start upload
+
+.upload__inner {
+    background-color: #fff;
+    border: 1px solid hsl(0, 0%, 84%);
+    margin-bottom: 110px;
+    button {
+        color: #fff;
+        background-color: $green;
+        border: none;
+        padding: 15px 36px;
+        margin-left: 175px;
+        cursor: pointer;
+    }
+    &-title {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        padding: 16px 35px 18px;
+        font-size: 24px;
+        color: $bg;
+        border-bottom: 1px solid #d7d7d7;
+        margin-bottom: 40px;
+    }
+    &-content {
+        margin-bottom: 30px;
+        padding-left: 45px;
+        padding-right: 50px;
+    }
+}
+.upload__line {
+    display: flex;
+    margin-bottom: 25px;
+    label {
+        min-width: 175px;
+        padding-right: 15px;
+        color: #444;
+        padding-top: 5px;
+        span {
+            color: $green;
+        }
+    }
+    select,
+    input,
+    textarea {
+        width: 100%;
+        display: block;
+        border: 1px solid #d7d7d7;
+        height: 40px;
+        background-color: #f9f9f9;
+        padding: 0px 18px;
+        &::placeholder {
+            color: #707070;
+        }
+    }
+    textarea {
+        resize: none;
+        height: 150px;
+        padding: 8px 18px;
+    }   
+}
+input[type="file"]{
+    outline: none;
+}
+.jq-file {
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: none;
+    height: 40px;
+    border: 1px solid #dedede;
+    background-color: #f9f9f9;
+}
+.jq-file__name {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0 18px;
+    border: none;
+    border-bottom-color: transparent;
+    border-radius: 0px;
+    background: transparent;
+    box-shadow: none;
+    line-height: 40px;
+    font-size: 12px;
+    color: #707070;
+    margin-left: 100px;
+}
+.jq-file__browse {
+    top: 5px;
+    right: auto;
+    left: 9px;
+    padding: 0 12px;
+    line-height: 26px;
+    font-size: 12px;
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: none;
+    text-shadow: none;
+    color: #444;
+}
+.jq-selectbox {
+    width: 100%;
+}
+.jq-selectbox__select {
+    height: 40px;
+    padding: 0px 18px;
+    border: 1px solid #dedede;
+    border-bottom-color: #dedede;
+    border-radius: 0px;
+    background-color: #f9f9f9;
+    box-shadow: none;
+    font-family: 'Roboto-Regular', sans-serif;
+    color:#707070;
+    text-shadow: none;
+    line-height: 40px;
+}
+.jq-selectbox__trigger-arrow {
+    border: none;
+    top: 0;
+    line-height: 40px;
+    right: 20px;
+    font-size: 15px;
+    &::before {
+        content: "\f0d7";
+        font-family: 'icomoon';
+    }
+}
+.jq-selectbox__trigger {
+    border-left: none;
+}   
+//end upload
+//start withdrawals
+
+.withdrawals__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+.withdrawals__col {
+    max-width: 570px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    width: 100%;
+    
+}
+.withdrawals__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 18px 32px 24px;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 30px;
+    color: $bg;
+}
+.withdrawals__content {
+    padding-left: 35px;
+    padding-right: 40px;
+    button {
+        margin-bottom: 50px;
+        color: #fff;
+        background-color: $green;
+        border: none;
+        padding: 15px 36px;
+        margin-left: 0px;
+        cursor: pointer;
+    }
+}
+.withdrawal__form-line {
+    margin-bottom: 25px;
+    label {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        margin-bottom: 15px;
+        color: $bg;
+        span {
+            color: $green;
+        }                  
+    }
+    input,
+    select {
+        width: 100%;
+        display: block;
+        border: 1px solid #d7d7d7;
+        height: 40px;
+        background-color: #f9f9f9;
+        padding: 0px 18px;  
+        &::placeholder {
+            color: #707070;
+        }
+    }
+
+}
+.withdrawals__content-items {
+    padding-bottom: 35px;
+}
+.withdrawals__content-item {
+    display: flex;
+    width: 100%;
+    height: 42px;
+    align-items: center;
+    font-size: 13px;
+    color: #444;
+    &:nth-child(odd){
+        background-color: #f9f9f9;
+    }
+}
+.withdrawals__content-date {
+    width: 154px;
+    border-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.withdrawals__content-email {
+    width: 180px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.withdrawals__content-price {
+    width: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.withdrawals__content-status {
+    width: 88px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    &.withdrawals__content-paid {
+        color: $green;
+    }
+}
+
+
+//end withdrawals
 @import "media";
