@@ -125,6 +125,8 @@
     position: relative;
     height: 90px;
     margin-top: 40px;
+}
+.user__box {
     &:hover {
         .user__menu {
             height: auto;
@@ -585,8 +587,6 @@
 .product__item {
     max-width: 442px;
     width: 100%;
-    flex-basis: calc(25% - 30px);
-    margin-left: 30px;
     box-shadow: 0 1px 2px 0 rgba(205, 214, 222, 0.75);
     margin-bottom: 30px;
     &-img {
@@ -1117,6 +1117,7 @@
     border: 4px solid $green;
     background-color: #fff;
     border-radius: 50px;
+    margin-left: -2px;
 }
 .irs-handle:hover > i:first-child {
     background-color: transparent;
@@ -1196,6 +1197,9 @@
     .product__item:first-child {
         margin-top: 25px;
     }
+}
+.irs--flat .irs-handle.state_hover>i:first-child, .irs--flat .irs-handle:hover>i:first-child {
+    background-color: #fff;
 }
 .top-sellers__link {
     padding: 16px 10px;
@@ -1351,6 +1355,21 @@
         }
     }
 }
+.product__item.new.list .product__item-content {
+    border-top: 1px solid #dcdcdc;
+}
+.product-page__content .product__item-info {
+    max-height: 65px;
+    padding: 10px 20px;
+}
+.product__item-desk .icon-comment-o, .product__item-desk .icon-heart-o {
+    bottom: 95px;
+    margin-left: 4px;
+    left: 100px;
+}
+.product__item.new.list .product__item-star {
+    margin-right: -250px !important;
+}
 .product__item.new {
     &.list {
         max-width: 100%;
@@ -1370,8 +1389,6 @@
         .product__item-price {
             font-size: 30px;
             span {
-                display: block;
-                display: block;
                 display: block;
                 font-size: 13px;
                 color: #aeb4bb;
@@ -1556,16 +1573,24 @@
         width: 100%;
         background-color: #fff;
         font-size: 16px;
-        color: #d7d7d7;
+        color: #70838d;
         padding: 20px 0;
         cursor: pointer;
-        & + .tab {
+        & +.tab {
             border-left: 1px solid #d7d7d7;
+        }
+        &.active {
+            border-bottom: 3px solid $green;
+            color: #37474f;
+            &::before {
+                color: $green;
+            }
         }
     }
 }
 .product-one__tabs {
     margin-bottom: 55px;
+
 }
 .tab_content {
     border: 1px solid #d7d7d7;
@@ -1830,6 +1855,9 @@
 .contact__box {
     display: flex;
 }
+.contact__info-title::before {
+    font-family: 'icomoon';
+}
 .contact__info {
     margin-right: 30px;
     max-width: 330px;
@@ -1841,7 +1869,7 @@
         padding-bottom: 20px;
         position: relative;
         font-size: 20px;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", sans-serif !important;
         font-weight: 500;
         color: $bg;
         padding-left: 40px;
@@ -1860,6 +1888,7 @@
             font-size: 24px;
             position: absolute;
             left: 0;
+            content: "\f041";
         }
     }
     &-content {
@@ -1932,11 +1961,7 @@
     width: 100%;
     z-index: 0;
 }
-.jq-selectbox__select {
-    max-width: 540px;
-}
-
-.product-one__tabs.settings__tabs {
+.settings__tabs {
     display: flex;
     .tabs {
         max-width: 270px;
@@ -1977,10 +2002,11 @@
         border-top: 1px solid #dedede;
         background-color: transparent;
     }
-}
-.tabs .tab + .tab {
+    .tabs .tab + .tab {
     border-left: none;
 }
+}
+
 .page-box {
     border: 1px solid #dedede;
     background-color: #fff;
@@ -2314,18 +2340,24 @@ input[type="file"]{
 .jq-selectbox {
     width: 100%;
 }
+.select-your-country {
+    max-width: 540px;
+}
 .jq-selectbox__select {
     height: 40px;
-    padding: 0px 18px;
+    padding: 0px 25px 0px 10px;
     border: 1px solid #dedede;
     border-bottom-color: #dedede;
     border-radius: 0px;
-    background-color: #f9f9f9;
+    background: #f9f9f9;
     box-shadow: none;
     font-family: 'Roboto-Regular', sans-serif;
-    color:#707070;
+    color:#70838d;
     text-shadow: none;
     line-height: 40px;
+    &:hover {
+        background: #f9f9f9;
+    }
 }
 .jq-selectbox__trigger-arrow {
     border: none;
@@ -2336,6 +2368,7 @@ input[type="file"]{
     &::before {
         content: "\f0d7";
         font-family: 'icomoon';
+        color: $green;
     }
 }
 .jq-selectbox__trigger {
@@ -2349,13 +2382,14 @@ input[type="file"]{
     justify-content: space-between;
     margin-bottom: 110px;
 }
-.withdrawals__col {
+.withdrawals__box {
+    border: 1px solid #dedede;
+}
+.withdrawals__col,
+.withdrawals__col-2 {
     max-width: 570px;
     width: 100%;
-    background-color: #fff;
-    border: 1px solid #dedede;
-    width: 100%;
-    
+    background-color: #fff;  
 }
 .withdrawals__title {
     font-family: 'Roboto', sans-serif;
