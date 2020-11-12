@@ -5,6 +5,17 @@ $(function (){
          readOnly: true
       });
           
+      wow = new WOW(
+        {
+        boxClass:     'wow',      // default
+        animateClass: 'animate__animated', // default
+        offset:       100,          // default
+        mobile:       false,       // default
+        live:         true        // default
+      }
+      )
+      wow.init();
+
       $('.product-slider__inner').slick({
               dots: true,
               infinite: true,

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
@@ -105,7 +105,7 @@
                       <div class="basket__info">
                         <div class="basket__info-name">Гит</div>
                         <div class="basket__info-thema">WordPress</div>
-                        <div class="basket__info-price">4.000 Руб</div>
+                        <div class="basket__info-price">$15</div>
                       </div>
                     </div>
                     <div class="basket__item">
@@ -113,16 +113,16 @@
                       <div class="basket__info">
                         <div class="basket__info-name">Телеграм</div>
                         <div class="basket__info-thema">WordPress</div>
-                        <div class="basket__info-price">4.000 Руб</div>
+                        <div class="basket__info-price">$20</div>
                       </div>
                     </div>
                     <div class="basket__summ">
                       <div class="basket__title">
                         <div class="basket__summ-total">Цена</div>
-                        <div class="basket__summ-price">8.000 Руб</div>
+                        <div class="basket__summ-price">$35</div>
                       </div>
-                      <a class="basket__btn" href="#">Перейти в Корзину</a>
-                      <a class="basket__btn basket__btn-checout" href="#">Перейти к Оформлению</a>
+                      <a class="basket__btn" href="#">Корзина</a>
+                      <a class="basket__btn basket__btn-checout" href="#">Оформление</a>
                     </div>
                   </div>
                 </div>
@@ -137,7 +137,7 @@
                           Александр Хусейн
                         </div>
                         <div class="user__money">
-                          12.000 Руб
+                          $58 Руб
                         </div>
                       </div>
                     </div>
@@ -155,10 +155,10 @@
                     </ul>
                   </div>
                 </div>
-                <a class="header__btn header__btn-login header__btn-login--on" data-fancybox data-src="#modal"
+                <a class="header__btn header__btn-register header__btn-login--on" data-fancybox data-src="#modal"
                   href="javascript:;">Логин
-                  <a class="header__btn Авторизоваться-logout header__btn-login--off" href="#">Выход</a>
-                  <a class="header__btn Авторизоваться-register header__btn-login--on" href="#">Регистрация</a>
+                  <a class="header__btn header__btn-login header__btn-login--on" href="">Зайти</a>
+                  <a class="header__btn header__btn-logout header__btn-login--off" href="">Выйти</a>
               </div>
               <div class="header__btn-menu icon-user"></div>
             </div>
@@ -197,12 +197,12 @@
                     </li>
                     <li>
                       <a href="#">
-                        Plagins
+                        Plugins
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        Components
+                        Компоненты
                       </a>
                     </li>
                     <li>
@@ -230,10 +230,10 @@
       <section class="search" style="background-image: url(images/search.jpg);">
         <div class="container">
           <div class="search__inner">
-            <div class="search__inner-title">
+            <div class="search__inner-title wow animate__animated animate__bounceInDown">
               Добро Пожаловать в MODERNO!
             </div>
-            <div class="search__inner-text">
+            <div class="search__inner-text wow animate__animated animate__bounceInLeft">
               Премиум-темы WordPress, веб-шаблоны и многое другое ...
             </div>
             <div class="search__inner-form">
@@ -252,12 +252,12 @@
           <div class="container-fluid">
             <div class="products__inner">
               <div class="products__inner-btn">
-                <button type="button" data-filter="all">Всё</button>
-                <button type="button" data-filter=".category-wordpress">WordPress</button>
-                <button type="button" data-filter=".category-joomla">Joomla</button>
-                <button type="button" data-filter=".category-plugins">Plagins</button>
-                <button type="button" data-filter=".category-components">Components</button>
-                <button type="button" data-filter=".category-psd">PSD</button>
+                <button class="wow animate__fadeIn" type="button" data-filter="all">Всё</button>
+                <button class="wow animate__fadeIn" type="button" data-filter=".category-wordpress">WordPress</button>
+                <button class="wow animate__fadeIn" type="button" data-filter=".category-joomla">Joomla</button>
+                <button class="wow animate__fadeIn" type="button" data-filter=".category-plugins">Plugins</button>
+                <button class="wow animate__fadeIn" type="button" data-filter=".category-components">Компоненты</button>
+                <button class="wow animate__fadeIn" type="button" data-filter=".category-psd">PSD</button>
               </div>
               <div class="products__inner-box">
                 <div class="product__item mix category-plugins category-popular" data-order="1">
@@ -467,33 +467,33 @@
               </div>
             </div>
             <div class="product-bottom-btn">
-              <button type="button" data-filter=".category-new">Новые Предметы</button>
-              <button type="button" data-filter=".category-popular">Популярные Предметы</button>
+              <button class="wow animate__fadeInLeft" type="button" data-filter=".category-new">Новые Предметы</button>
+              <button class="wow animate__fadeInRight" type="button" data-filter=".category-popular">Популярные Предметы</button>
             </div>
           </div>
         </div>
       </section>
       <section class="tutorial">
         <div class="container">
-          <div class="tutorial__title title">
+          <div class="tutorial__title title wow animate__animated animate__backInUp">
             БЕСПЛАТНЫЕ УЧЕБНЫЕ ПОСОБИЯ
           </div>
           <div class="tutorial__inner">
-            <div class="tutorial__item">
+            <div class="tutorial__item wow animate__bounceInLeft">
               <div class="tutorial__item-images" style="background-image: url(images/new/wd.jpg);">
               </div>
               <a class="tutorial__item-title" href="#">
                 Веб Дизайн
               </a>
             </div>
-            <div class="tutorial__item">
+            <div class="tutorial__item wow animate__bounceInUp">
               <div class="tutorial__item-images" style="background-image: url(images/new/wp.jpg);">
               </div>
               <a class="tutorial__item-title" href="#">
                 WordPress
               </a>
             </div>
-            <div class="tutorial__item">
+            <div class="tutorial__item wow animate__bounceInRight">
               <div class="tutorial__item-images" style="background-image: url(images/new/hs.jpg);">
               </div>
               <a class="tutorial__item-title" href="#">
@@ -505,14 +505,14 @@
       </section>
       <section class="advantages">
         <div class="container">
-          <div class="advantages-title title">
+          <div class="advantages-title title wow animate__animated animate__tada">
             Преимущества Нашего Сайта
           </div>
           <div class="advantages__inner">
             <div class="advantages__item">
               <div class="advantages__item-images icon-lock">
               </div>
-              <div class="advantages__item-title">
+              <div class="advantages__item-title title1 wow animate__fadeInLeft">
                 Легко Купить и Продать
               </div>
               <div class="advantages__item-text">
@@ -522,7 +522,7 @@
             <div class="advantages__item">
               <div class="advantages__item-images icon-gift">
               </div>
-              <div class="advantages__item-title">
+              <div class="advantages__item-title title2 wow animate__fadeInLeft">
                 Высокое Качество
               </div>
               <div class="advantages__item-text">
@@ -532,7 +532,7 @@
             <div class="advantages__item">
               <div class="advantages__item-images icon-heart-o">
               </div>
-              <div class="advantages__item-title">
+              <div class="advantages__item-title title3 wow animate__fadeInLeft">
                 100% Защита
               </div>
               <div class="advantages__item-text">
@@ -544,8 +544,8 @@
         </div>
       </section>
       <section class="authors" style="background-image: url(images/authors.jpg);">
-        <div class="authors__box">
-          <div class="authors__title">
+        <div class="authors__box wow animate__animated animate__bounceIn">
+          <div class="authors__title wow animate__animated animate__bounceInLeft">
             Здесь работают <span>20,000</span> авторов
           </div>
           <a class="authors__link" href="#">Стать Автором</a>
@@ -554,8 +554,8 @@
       <section class="product-slider">
         <div class="product-slider__wrapper">
           <div class="container-fluid">
-            <div class="product-slider__title title">
-              This Week Trending Products
+            <div class="product-slider__title title wow animate__animated animate__slideInUp">
+              Популярные Продукты Этой Недели
             </div>
             <div class="product-slider__inner">
               <div class="product__item">
@@ -767,7 +767,7 @@
         </div>
       </section>
     </div>
-    <footer class="footer">
+    <footer class="footer wow animate__animated animate__bounceInUp">
       <div class="footer__content">
         <div class="container">
           <div class="footer__inner">
