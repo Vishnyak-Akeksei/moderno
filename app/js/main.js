@@ -5,19 +5,34 @@ $(function (){
          readOnly: true
       });
           
+      wow = new WOW(
+        {
+        boxClass:     'wow',      // default
+        animateClass: 'animate__animated', // default
+        offset:       100,          // default
+        mobile:       false,       // default
+        live:         true        // default
+      }
+      )
+      wow.init();
+
       $('.product-slider__inner').slick({
               dots: true,
               infinite: true,
               arrows: false,
+              autoplay: true,
+              autoplaySpeed: 900,
               slidesToShow: 4,
-              slidesToScroll: 4,
+              slidesToScroll: 1,
               responsive: [
                 {
                   breakpoint: 1900,
                   settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 1,
                     infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 900,
                     dots: true
                   }
                 },
@@ -25,12 +40,16 @@ $(function (){
                   breakpoint: 1441,
                   settings: {
                     slidesToShow: 2,
+                    autoplay: true,
+                    autoplaySpeed: 900,
                     slidesToScroll: 1,
                   }
                 },
                 {
                   breakpoint: 640,
                   settings: {
+                    autoplay: true,
+                    autoplaySpeed: 900,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                   }
